@@ -24,6 +24,9 @@ variable "cidr_block_private" {
 variable "port" {
     default = "80"
 }
+variable "e_port" {
+    default = "22"
+}
 
 variable "i_protocol"{
     default = "tcp"
