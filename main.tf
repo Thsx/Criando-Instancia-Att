@@ -33,6 +33,12 @@ resource "aws_security_group" "main" {
     protocol    = "${var.i_protocol}"
     cidr_blocks = ["0.0.0.0/0"]
   }
+   egress {
+    from_port   = "${var.e_port}"
+    to_port     = "${var.e_port}"
+    protocol    = "${var.i_protocol}"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   tags {
     Name = "Paredao"
