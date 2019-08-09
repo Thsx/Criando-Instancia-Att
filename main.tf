@@ -19,7 +19,7 @@ resource "aws_instance" "Teste" {
    EOF
 
   tags {
-    Name = "Geladeira_Tsunami"
+    Name ="Aeroporto_Flamenguista"
   }
   }
   resource "aws_vpc" "Teste_Vpc" {
