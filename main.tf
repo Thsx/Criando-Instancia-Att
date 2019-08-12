@@ -6,8 +6,6 @@ terraform {
   }
 }
 provider "aws" {
-access_key = "AKIA4DYZNERBFB27RWCC"
-secret_key = "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"
 region      = "${var.region}"
 }
 resource "aws_instance" "Teste" {
