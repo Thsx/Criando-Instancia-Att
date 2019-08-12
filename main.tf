@@ -1,10 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "terraform-bucket-thiagod"
-    key    = "terraform.tfstate"
-    region = "us-west-1"
-  }
-}
 provider "aws" {
 region      = "${var.region}"
 }
