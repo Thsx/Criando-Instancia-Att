@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+environment {  #Especifica um par de chaves que vem a seguir
+        AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+            }
     stages {
         stage('Clone Repo') {
             steps {
