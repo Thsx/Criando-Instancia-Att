@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                rm -rf Testando
+                sh "rm -rf Testando"
                 sh "git clone https://github.com/Thsx/Testando"
 
             }
